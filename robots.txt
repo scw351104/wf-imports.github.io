@@ -1,3 +1,9 @@
-# 建设期不让搜索引擎收录；正式上线后删掉这两行即可
 User-agent: *
-Disallow: /
+Allow: /
+
+# 说明文档不需要被收录
+Disallow: /README.md
+Disallow: /更新指南.md
+
+# 上线后把下面这行改成真实域名
+# Sitemap: https://www.yourdomain.com/sitemap.xml
