@@ -1,58 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Page not found — WF Imports</title>
-<meta name="robots" content="noindex" />
-<link rel="icon" href="assets/wf-imports-logo.png" />
-<style>
-  :root{
-    --bg:#FBF9F7; --ink:#1B1411; --muted:#8E7F74; --muted-2:#A99B90;
-    --copper-dp:#7A3E1E;
-    --sans:"Inter","Segoe UI Variable Display","Segoe UI","Helvetica Neue",Arial,sans-serif;
-  }
-  *{ box-sizing:border-box; margin:0; padding:0; }
-  body{
-    font-family:var(--sans);
-    background:var(--bg); color:var(--ink);
-    min-height:100svh;
-    display:flex; flex-direction:column;
-    align-items:center; justify-content:center;
-    text-align:center;
-    padding:40px 24px;
-    -webkit-font-smoothing:antialiased;
-    background-image:radial-gradient(circle at 50% 30%, rgba(206,150,110,.09), rgba(206,150,110,0) 62%);
-  }
-  img{ width:118px; mix-blend-mode:multiply; margin-bottom:40px; }
-  .code{
-    font-size:clamp(64px,14vw,132px);
-    font-weight:800; letter-spacing:-.05em; line-height:1;
-    background:linear-gradient(96deg,#6F3719,#A85B31 40%,#E2A76E 58%,#7A3E1E);
-    -webkit-background-clip:text; background-clip:text; color:transparent;
-  }
-  p{
-    margin-top:22px; max-width:34ch;
-    font-size:14px; line-height:1.75; color:var(--muted);
-  }
-  a{
-    margin-top:34px;
-    display:inline-flex; align-items:center; gap:9px;
-    padding:13px 26px; border-radius:999px;
-    border:1px solid rgba(150,90,55,.32);
-    background:rgba(255,255,255,.6);
-    color:var(--copper-dp); text-decoration:none;
-    font-size:11px; font-weight:650;
-    letter-spacing:.17em; text-transform:uppercase;
-    transition:background .35s ease, color .35s ease, border-color .35s ease;
-  }
-  a:hover{ background:linear-gradient(100deg,#8E4A24,#C1743F); color:#fff; border-color:transparent; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>页面不存在</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <!-- 404 可能出现在任意路径下，所以这里用绝对路径 -->
+  <link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
-  <img src="assets/wf-imports-logo.png" alt="WF Imports" onerror="this.onerror=null;this.src='/assets/wf-imports-logo.png'" />
-  <div class="code">404</div>
-  <p>That page isn't here. The range, the specs and the pricing are one click away.</p>
-  <a href="/">Back to the site <span aria-hidden="true">→</span></a>
+  <div class="backdrop" aria-hidden="true"></div>
+
+  <main class="stage">
+    <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>404 Not Found</p>
+    <h1 class="title">页面不存在</h1>
+    <span class="rule" aria-hidden="true"></span>
+    <p class="lede"><a class="back" href="/">回到首页</a></p>
+  </main>
+
+  <footer class="foot">
+    <p class="foot__copy">© <span id="year">2026</span> <span id="brand">本站</span></p>
+    <p class="foot__contact"></p>
+  </footer>
+
+  <script src="/assets/main.js" defer></script>
 </body>
 </html>
