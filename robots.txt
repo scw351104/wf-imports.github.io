@@ -1,9 +1,5 @@
 User-agent: *
 Allow: /
 
-# 说明文档不需要被收录
-Disallow: /README.md
-Disallow: /更新指南.md
-
-# 上线后把下面这行改成真实域名
+# 上线绑定自定义域名后，可在此声明站点地图
 # Sitemap: https://www.yourdomain.com/sitemap.xml
