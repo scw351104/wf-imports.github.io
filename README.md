@@ -41,7 +41,7 @@ v1.html / v2.html                 历史版本，已在 .gitignore 中排除，�
 
 ## 铁律
 
-**页面正文 = `C:\Users\Chuwei\Desktop\网站.docx` 的正文，逐字一致，共 17 条（205 个词）。**
+**页面正文 = `C:\Users\Chuwei\Desktop\网站.docx` 的正文，逐字一致，共 17 条。**
 
 除首屏右上角那四个导航链接外，不新增任何文案：没有按钮、章节编号、页码、数据统计、页脚、说明文字、表单、跑马灯、装饰图形、图片。文档里的 `Page 1.` ~ `Page 4` 是分页标记，不显示。
 
@@ -50,6 +50,8 @@ v1.html / v2.html                 历史版本，已在 .gitignore 中排除，�
 **例外二**（2026-11-13 17:31 用户指定）：About 第二段替换为用户提供的新版本，标题 `About US` 改为 `About Us`。当前该段为：
 
 > Our mission is to act as your trusted procurement partner based in Canada, handling end-to-end overseas buying on your behalf. Beyond simple supplier sourcing, we manage full procurement execution for you.
+
+**例外三**（2026-11-13 18:17 用户指定）：资质表第一条去掉 `- Zero Defect Rate`，现为 `Consistent Premium Quality`。条目数仍为 7 条。
 
 原文拼写保持原样，未经确认不要改：`Bult to Your Specs`、`M2H0A9`。
 
